@@ -118,7 +118,7 @@ const htmlTemplate = `
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta name="go-import" content="{{.Path}} {{.VCS}} {{.Repo}}" />
+		<meta name="go-import" content="{{.Path}} {{.VCS}} https://{{.Repo}}" />
 		<meta http-equiv="refresh" content="0;url=https://pkg.go.dev/{{.Path}}" />
 		<meta name="robots" content="noindex,noarchive" />
 		<meta name="generator" content="gometa" />
@@ -155,7 +155,7 @@ const htmlTemplate = `
 		</style>
 	</head>
 	<body>
-		<p>Redirecting to <a href="https://pkg.go.dev/{{.Repo}}">Go Packages</a>...</p>
+		<p>Redirecting to <a href="https://pkg.go.dev/{{.Path}}">Go Packages</a>...</p>
 	</body>
 </html>
 `
