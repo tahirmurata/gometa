@@ -42,7 +42,7 @@ func main() {
 
 		cw := csv.NewWriter(f)
 		cw.Write([]string{"package", "vcs", "repo"})
-		cw.Write([]string{"gometa", "git", "https://github.com/tahirmurata/gometa"})
+		cw.Write([]string{"gometa", "git", "github.com/tahirmurata/gometa"})
 		cw.Flush()
 
 	case "build <domain>":
